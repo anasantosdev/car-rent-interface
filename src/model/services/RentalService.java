@@ -11,6 +11,7 @@ public class RentalService {
 
     private TaxService taxService; //INTERFACE GENÉRICA
 
+    //INJEÇÃO DE DEPENDÊNCIA POR MEIO DE CONSTRUTOR === SOLUÇÃO PARA FORTE ACOPLAMENTO ! (UMA DAS FORMAS DE INVERSÃO DE CONTROLE)
     public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) {
         this.pricePerDay = pricePerDay;
         this.pricePerHour = pricePerHour;
